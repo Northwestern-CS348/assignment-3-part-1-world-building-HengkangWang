@@ -37,7 +37,7 @@ class KBTest(unittest.TestCase):
             'fact: (movable disk1 peg1 peg3)',
         ]
         self.checkMovables(th, expectedMovables)
-
+    
     def test02(self):
         th = TowerOfHanoiGame()
         th.read('hanoi_all_disks_on_peg_one.txt')
@@ -56,7 +56,7 @@ class KBTest(unittest.TestCase):
             'fact: (movable disk5 peg1 peg3)',
         ]
         self.checkKb(th.kb, required, forbidden)
-
+    
     def test03(self):
         th = TowerOfHanoiGame()
         th.read('hanoi_two_smallest_on_peg_three.txt')
